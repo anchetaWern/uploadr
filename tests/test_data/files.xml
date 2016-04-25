@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="uploadr">
+	<table_data name="files">
+	<row>
+		<field name="id">1</field>
+		<field name="original_name">prims.png</field>
+		<field name="mimetype">image/png</field>
+		<field name="upload_id">1</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ app_name }}</title>
+    <link rel="stylesheet" href="{{ base_url() }}/css/main.css">
+</head>
+<body>
+   
+    <div id="wrapper">
+        <div id="header">
+            <h1>{{ app_name }}</h1>
+        </div>
+        <div id="content">
+            <form action="/upload"
+                class="dropzone"
+                id="drop">
+            </form>
+            <button class="btn" id="upload">Upload</button>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

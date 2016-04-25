@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ app_name }}</title>
+    <link rel="stylesheet" href="{{ base_url() }}/css/main.css">
+</head>
+<body>
+   
+    <div id="wrapper">
+        <div id="header">
+            <h1>{{ app_name }}</h1>
+        </div>
+        <div id="content">
+            <h4>Share URL</h4>
+            <input type="text" id="share_url" value="{{ url }}">
+
+            <ul id="files">
+                {% for file in files %}
+                <li>
+                    <a href="{{ base_url() }}/download?url={{ file.url }}">{{ file.original_name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
